@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>247 Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    	<div class="main clearfix">
+      	<div class="red"></div>
+        <div class="content clearfix">
+        	<h1>Title here</h1>
+      		<p id="scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    	</div>
+    </body>
+</html>
+<style>
+
+	/*------desktop styling------*/
+ /*Text styling*/
+	body {
+  	font-size: 12pt;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+  }
+  h1 {
+    font-size:18pt;
+    margin-bottom: 15px; 
+  }
+  
+  /*content and block element styling*/
+  .main {
+  	width: 1200px;
+    display: block;
+    background-color: black;
+    min-height: 250px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+  }
+  .red {
+  	display: block;
+  	width: 100%;
+    background-color: red;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  .clearfix {
+    overflow: auto;
+  }
+  /*responsive design*/
+  /*------Tablet styling------*/
+  @media screen and (max-width: 1024px) {
+  	.main {
+    	width: 80%;
+      height: 200px;
+    }
+    .red {
+    	float: left;
+      width: 40%;
+      height: 100%;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+    .content {
+      margin-bottom: 0;
+      width: 50%;
+      height: 100%;
+      display: block;
+      float: right;
+      overflow: scroll;
+    }
+
+  }
+  /*------Mobile styling------*/
+  @media screen and (max-width: 480px) {
+  	.main {
+			width: 90%;
+      height: 150px;
+    }
+    .red {
+    	width: 15%;
+      margin-right: 10px;
+    }
+    .content {
+      display: block;
+      height: 50px;
+      overflow: scroll;
+    }
+  }
+</style>
+
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
